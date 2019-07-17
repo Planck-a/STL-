@@ -1,6 +1,6 @@
 1 STL六大部件
 --
-容器  算法   迭代器   分配器    适配器Adapters    仿函数Functors
+容器  算法   迭代器   分配器     适配器Adapters    仿函数Functors
 
 2 常用容器
 ---
