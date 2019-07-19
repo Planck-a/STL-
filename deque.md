@@ -27,7 +27,9 @@ class iterator   //大小12字节
 2 deque和queue/stack的关联
 ---
 queue和stack
-内部都是包含了一个deque，只不过是封住了deque的某些接口；（此外这两个也可以用list做底层支撑）；queue和stack不允许遍历、插入，没有迭代器！！
+内部都是包含了一个deque，只不过是封住了deque的某些接口；（此外这两个也可以用list做底层支撑）；
+
+容器适配器：stack,queue,priority_queue不允许遍历、插入，没有迭代器！！
 
 stack可以用vector做底部支撑；
 queue不能用vector做底部支撑，因为vector没有pop()函数
