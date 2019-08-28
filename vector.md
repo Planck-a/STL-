@@ -20,3 +20,19 @@ size()函数计算的就是指针finish-start，指针间距就是大小
 
 3 vector使用的注意点及其原因，频繁对vector调用push_back()对性能的影响和原因。
 ---
+
+4.vector通过迭代器删除
+---
+```
+for(auto iter = vecInt.begin(); iter != vecInt.end(); iter++
+  if(*iter == 444){		
+         iter = vecInt.erase(iter);
+         iter--;			
+     }
+	}
+```
+在使用vector.erase(iterator)的时候需要时刻注意:
+
+如果是444就执行vecInt.erase(iter)。此时iter迭代器被erase，iter指向了一个不确定的地址成为野指针，在for循环的条件中，直接iter++会导致程序崩溃。
+
+但是这个语句执行完会返回下一迭代器位置，用一个迭代器来接这个位置就不会出错。使用 iterator = vector.erase(iterator) 防止变成野指针程序崩溃。同时，由于会自动++，为了遍历所有的数，主动--
