@@ -1,4 +1,4 @@
-[vector内部图](https://github.com/Planck-a/image-folder/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/vector.jpg)
+![vector内部图](https://github.com/Planck-a/image-folder/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/vector.jpg)
 
 1、vector的内部实现
 ---
